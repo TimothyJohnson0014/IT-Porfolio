@@ -11,7 +11,11 @@ This project simulates the complete bare-metal setup and configuration of a cent
 To ensure network consistency and reliable local name resolution, I manually configured the network adapter properties on the Windows Server 2022 instance, shifting it away from dynamic addressing to a permanent, static corporate layout matching the local hypervisor subnet gateway.
 * **Key Configs:** IP `192.168.150.10`, Gateway `192.168.150.2`, DNS `192.168.150.10`
 
-![Static IP Configuration](screenshots/your_step1_photo.png)
+![Static IP Configuration](screenshots/StaticIP-1.png)
+
+(screenshots/StaticIP-2.png)
+
+(screenshots/StaticIP-3.png)
 
 ---
 
