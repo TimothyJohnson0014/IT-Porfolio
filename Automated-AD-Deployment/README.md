@@ -13,9 +13,9 @@ To ensure network consistency and reliable local name resolution, I manually con
 
 ![Static IP Configuration](Screenshots/StaticIP-1.png)
 
-![](screenshots/StaticIP-2.png)
+![Static IP Configuration](screenshots/StaticIP-2.png)
 
-![](screenshots/StaticIP-3.png)
+![Static IP Configuration](screenshots/StaticIP-3.png)
 
 ---
 
