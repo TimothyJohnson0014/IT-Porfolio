@@ -20,10 +20,23 @@ To ensure network consistency and reliable local name resolution, I manually con
 ---
 
 ### Step 2: Promoting the Domain Controller & Creating the Forest
-I installed the Active Directory Domain Services (AD DS) and DNS Server roles through Server Manager. Once installed, I promoted the instance to a Domain Controller, creating a brand new root-level active directory forest named `nexus.local`.
+I installed the Active Directory Domain Services (AD DS) and DNS Server roles through Server Manager. Once installed, I promoted the instance to a Domain Controller, creating a brand new root-level active directory forest named `corp.local`.
 
-![Domain Controller Promotion](screenshots/your_step2_photo.png)
+![Domain Controller Promotion](ScreenshotsP1/AD-1.png)
 
+![Domain Controller Promotion](ScreenshotsP1/AD-2.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-3.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-4.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-5.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-6.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-7.png)
+
+![Domain Controller Promotion](ScreenshotsP1/AD-8.png)
 ---
 
 ### Step 3: Automating Multi-Department Onboarding via PowerShell
@@ -41,6 +54,6 @@ I deployed the DHCP Server role on the Domain Controller and created an active I
 ---
 
 ### Step 5: Client Workstation Domain-Join & Authentication
-Booted up the Windows 11 Client VM, verified via `ipconfig` that it pulled a clean network configuration from the server's DHCP pool, and changed its system settings to join the `nexus.local` domain. I successfully logged in for the first time using a script-generated user profile.
+Booted up the Windows 11 Client VM, verified via `ipconfig` that it pulled a clean network configuration from the server's DHCP pool, and changed its system settings to join the `corp.local` domain. I successfully logged in for the first time using a script-generated user profile.
 
 ![Domain Join Success Welcome](screenshots/your_step5_photo.png)
