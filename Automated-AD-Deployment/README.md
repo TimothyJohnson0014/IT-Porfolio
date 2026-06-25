@@ -58,11 +58,31 @@ Instead of manually creating accounts, I utilized PowerShell ISE to write an aut
 ### Step 4: Activating Corporate DHCP Core Services
 I deployed the DHCP Server role on the Domain Controller and created an active IP assignment scope. This ensures any corporate machine plugged into the network automatically receives an IP address within the valid `192.168.150.50 - .150` range while explicitly setting the server as their primary DNS director.
 
-![DHCP Scope Setup](screenshots/your_step4_photo.png)
+![DHCP Scope Setup](ScreenshotsP1/DHCP-1.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-2.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-3.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-4.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-5.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-6.png)
+
+![DHCP Scope Setup](ScreenshotsP1/DHCP-7.png)
 
 ---
 
 ### Step 5: Client Workstation Domain-Join & Authentication
 Booted up the Windows 11 Client VM, verified via `ipconfig` that it pulled a clean network configuration from the server's DHCP pool, and changed its system settings to join the `corp.local` domain. I successfully logged in for the first time using a script-generated user profile.
 
-![Domain Join Success Welcome](screenshots/your_step5_photo.png)
+![Domain Join Success Welcome](ScreenshotsP1/Client-1.png)
+
+![Domain Join Success Welcome](ScreenshotsP1/Client-2.png)
+
+![Domain Join Success Welcome](ScreenshotsP1/Client-3.png)
+
+![Domain Join Success Welcome](ScreenshotsP1/Client-4.png)
+
+![Domain Join Success Welcome](ScreenshotsP1/Client-5.png)
