@@ -37,12 +37,21 @@ I installed the Active Directory Domain Services (AD DS) and DNS Server roles th
 ![Domain Controller Promotion](ScreenshotsP1/AD-7.png)
 
 ![Domain Controller Promotion](ScreenshotsP1/AD-8.png)
+
 ---
 
 ### Step 3: Automating Multi-Department Onboarding via PowerShell
 Instead of manually creating accounts, I utilized PowerShell ISE to write an automation script. The script automatically built separate Organizational Units (OUs) for HR, IT, and Finance, parsed user data, and safely provisioned standard employee accounts with secure temporary passwords.
 
-![PowerShell Automation Script](screenshots/your_step3_photo.png)
+![PowerShell Automation Script](ScreenshotsP1/PS-1.png)
+
+![PowerShell Automation Script](ScreenshotsP1/PS-2.png)
+
+![PowerShell Automation Script](ScreenshotsP1/PS-3.png)
+
+![PowerShell Automation Script](ScreenshotsP1/PS-4.png)
+
+![PowerShell Automation Script](ScreenshotsP1/PS-5.png)
 
 ---
 
