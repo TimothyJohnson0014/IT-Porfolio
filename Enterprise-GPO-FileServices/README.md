@@ -8,7 +8,7 @@ This project simulates designing a Security Group with OUs, designing and implem
 ## Step-by-Step Implementation
 
 ### Step 1: Setting up a Security Group
-To properly assign the appropriate file permissions for future steps, I created security groups corresponding to each department. The naming scale is not too difficult for better scalability if future departments are needed to be added. Eaxh group was manually named then the OUs were linked to the group.
+To properly assign the appropriate file permissions for future steps, I created security groups corresponding to each department. The naming scale is not too difficult for better scalability if future departments are needed to be added. Each group was manually named then the OUs were linked to the group.
 
 ![Security Group](ScreenshotsP2/Group-1.png)
 
