@@ -43,49 +43,47 @@ Advanced security permissions required me to delete each user using special perm
 
 ---
 
-### Step 3: Automating Multi-Department Onboarding via PowerShell
-Instead of manually creating accounts, I utilized PowerShell ISE to write an automation script. The script automatically built separate Organizational Units (OUs) for HR, IT, and Finance, parsed user data, and safely provisioned standard employee accounts with secure temporary passwords.
+### Step 3: Desktop Lockdown GPO Creation
+Group policy management is enforced through the main server such as blocking the control panel and command prompt. I went with the basic settings for the added security which can be readjusted through the user configuration. 
 
-![PowerShell Automation Script](ScreenshotsP1/PS-1.png)
+![Group Policy](ScreenshotsP2/GPO-1.png)
 
-![PowerShell Automation Script](ScreenshotsP1/PS-2.png)
+![Group Policy](ScreenshotsP2/GPO-2.png)
 
-![PowerShell Automation Script](ScreenshotsP1/PS-3.png)
+![Group Policy](ScreenshotsP2/GPO-3.png)
 
-![PowerShell Automation Script](ScreenshotsP1/PS-4.png)
+![Group Policy](ScreenshotsP2/GPO-4.png)
 
-![PowerShell Automation Script](ScreenshotsP1/PS-5.png)
+![Group Policy](ScreenshotsP2/GPO-5.png)
 
----
+![Group Policy](ScreenshotsP2/GPO-6.png)
 
-### Step 4: Activating Corporate DHCP Core Services
-I deployed the DHCP Server role on the Domain Controller and created an active IP assignment scope. This ensures any corporate machine plugged into the network automatically receives an IP address within the valid `192.168.150.50 - .150` range while explicitly setting the server as their primary DNS director.
+![Group Policy](ScreenshotsP2/GPO-7.png)
 
-![DHCP Scope Setup](ScreenshotsP1/DHCP-1.png)
+![Group Policy](ScreenshotsP2/GPO-8.png)
 
-![DHCP Scope Setup](ScreenshotsP1/DHCP-2.png)
-
-![DHCP Scope Setup](ScreenshotsP1/DHCP-3.png)
-
-![DHCP Scope Setup](ScreenshotsP1/DHCP-4.png)
-
-![DHCP Scope Setup](ScreenshotsP1/DHCP-5.png)
-
-![DHCP Scope Setup](ScreenshotsP1/DHCP-6.png)
-
-![DHCP Scope Setup](ScreenshotsP1/DHCP-7.png)
+![Group Policy](ScreenshotsP2/GPO-9.png)
 
 ---
 
-### Step 5: Client Workstation Domain-Join & Authentication
-Booted up the Windows 11 Client VM, verified via `ipconfig` that it pulled a clean network configuration from the server's DHCP pool, and changed its system settings to join the `corp.local` domain. I successfully logged in for the first time using a script-generated user profile.
+### Step 4: Network Drive Mapping
+The public folder that shows up across each user is created through the Group Policy Editor. The server static IP is necessary to ensure the public documents folder is visible to the users.
 
-![Domain Join Success Welcome](ScreenshotsP1/Client-1.png)
+![Drive Map](ScreenshotsP2/MAP-1.png)
 
-![Domain Join Success Welcome](ScreenshotsP1/Client-2.png)
+![Drive Map](ScreenshotsP2/MAP-2.png)
 
-![Domain Join Success Welcome](ScreenshotsP1/Client-3.png)
+![Drive Map](ScreenshotsP2/MAP-3.png)
 
-![Domain Join Success Welcome](ScreenshotsP1/Client-4.png)
+---
 
-![Domain Join Success Welcome](ScreenshotsP1/Client-5.png)
+### Step 5: User Testing
+Before completion of the project, it's imperative to test the policies from the user perspective to make sure each one works as intended. In my case, I was still able to create documents while logged as a HR user and had to backtrack to delete special user pernmissions. The command prompt restriction, control panel restriction, and text document creation were tested.
+
+![Test](ScreenshotsP2/Test-1.png)
+
+![Test](ScreenshotsP2/Test-2.png)
+
+![Test](ScreenshotsP2/Test-3.png)
+
+![Test](ScreenshotsP2/Test-4.png)
