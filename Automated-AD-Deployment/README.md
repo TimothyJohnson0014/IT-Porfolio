@@ -1,7 +1,7 @@
 # Automated Active Directory Deployment & Domain Architecture
 
 ## Project Overview
-This project simulates the complete bare-metal setup and configuration of a centralized corporate network infrastructure using VMware Workstation. 
+This project simulates the complete ground up setup and configuration of a corporate network infrastructure using VMware Workstation. 
 
 ---
 
@@ -41,7 +41,7 @@ I installed the Active Directory Domain Services (AD DS) and DNS Server roles th
 ---
 
 ### Step 3: Automating Multi-Department Onboarding via PowerShell
-Instead of manually creating accounts, I utilized PowerShell ISE to write an automation script. The script automatically built separate Organizational Units (OUs) for HR, IT, and Finance, parsed user data, and safely provisioned standard employee accounts with secure temporary passwords.
+Instead of manually creating accounts, I utilized PowerShell ISE to write an automation script. The script automatically built separate Organizational Units (OUs) for HR, IT, and Finance, parsed user data, and provisioned standard employee accounts with secure temporary passwords.
 
 ![PowerShell Automation Script](ScreenshotsP1/PS-1.png)
 

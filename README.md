@@ -19,6 +19,6 @@ Designed and deployed an isolated virtual corporate network environment in VMwar
 * **[Click Here to View the Full Step-by-Step Project Write-Up](./Automated-AD-Deployment/)**
 
 ### 2. [Enterprise Security Policy & Shared Storage](./Enterprise-GPO-FileServices/)
-Designed and deployed an isolated virtual corporate network environment in VMware Workstation. Built a Windows Server 2022 Domain Controller, automated multi-department user provisioning via PowerShell, configured corporate DHCP scopes, and successfully executed enterprise domain-joins for client workstations.
+With the existing domain environment created, simulated user to server request in office scenario by creating network shared folders with secuirty boundaries which are then mapped automatically to every user computer. Security groups are created to assign NTFS security permissions to proper folders aligned with GPO lockdown.
 * **Tools Used:** VMware Workstation Pro, Windows Server 2022, Windows 11, PowerShell
 * **[Click Here to View the Full Step-by-Step Project Write-Up](./Enterprise-GPO-FileServices/)**
