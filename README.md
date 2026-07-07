@@ -1,7 +1,7 @@
 # Automated Active Directory Deployment & Domain Architecture
 # My Technical IT Portfolio
 
-Welcome to my IT portfolio. This repository showcases hands-on enterprise technology projects, system administration environments, and automation scripts designed for modern corporate IT infrastructure.
+Welcome to my ongoing IT portfolio. This repository showcases hands-on enterprise technology projects, system administration environments, and automation scripts designed for modern corporate IT infrastructure. This is a work in progress Portfolio that is being added to weekly.
 
 ## Key Technical Proficiencies
 * **Operating Systems:** Windows Server 2022, Windows 10/11,
